@@ -6,19 +6,20 @@ import commands.DisplayFlightsCommand;
 
 public class DisplayFlightFrame extends JFrame{
 
+	/**
+	 * Construct the window to display all Flight information in Flight Set
+	 */
 	public DisplayFlightFrame(){
-		JTextField allFlight = new JTextField();
+		JTextArea allFlight = new JTextArea();
 		allFlight.setText(new DisplayFlightsCommand().getFlightsString());
 		allFlight.setEditable(false);
 		JScrollPane FlightPane = new JScrollPane(allFlight);
 		this.add(FlightPane);
+		this.setSize(getPreferredSize());
+		this.setTitle("All Flight Information");
+		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	}
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		DisplayFlightFrame one = new DisplayFlightFrame();
-		one.setVisible(true);
-	}
-
+	public static final long serialVersionUID = 1;
 	
 }

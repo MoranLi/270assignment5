@@ -25,10 +25,10 @@ public class PassengerSetAccess
 		{
 			/* Create the initial dictionary. */
 			dictionary = new TreeMap<String, Passenger>();
-			Passenger newPassenger = new Passenger("true_love","5201314");
-			Passenger oldPassenger = new Passenger("first_love","1314521");
-			dictionary.put("true_love", newPassenger);
-			dictionary.put("first_love",oldPassenger);
+			Passenger newPassenger = new Passenger("I_love_you","5201314");
+			Passenger oldPassenger = new Passenger("So_what?","1314521");
+			dictionary.put("I_love_you", newPassenger);
+			dictionary.put("So_what?",oldPassenger);
 		}
 		return dictionary;
 	}
